@@ -6,7 +6,7 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+  
   --first-color: hsl(14, 98%, 50%);
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
@@ -17,8 +17,8 @@
   --body-color: hsl(0, 0%, 87%);
   --container-color: #d4d4d4;
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+  /*========== Font ==========*/
+
   --body-font: "Bai Jamjuree", sans-serif;
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.75rem;
@@ -66,7 +66,6 @@ body{
 /* Navbar */
 .navbar {
     background-color: var(--container-color); 
-    
 }
 
 .navbar-brand img {
@@ -78,7 +77,6 @@ body{
     font-size: 30px; 
     font-weight: normal;
     transition: color 0.3s ease; 
-    
 }
 
 .navbar-nav .nav-link:hover {
@@ -110,8 +108,6 @@ body{
     }
 }
 
-
-
 img.float-right {
     float: right;
 }
@@ -132,7 +128,6 @@ header{
     background: no-repeat center;
     background-size: cover;
     color: white;
-    
 }
 
 .color-overlay{
@@ -144,7 +139,6 @@ header{
     .color-overlay{
         min-height: 30vh;
     }
-    
 }
 
 .text-center{
@@ -161,11 +155,6 @@ header{
 .singleCol{
    max-width: 750px; 
 }
-
-
-
-    
-
 
 footer{
     background-color: black;
@@ -200,7 +189,6 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: background-color .4s; /* for dark mode */
 }
 
 h1, h2, h3, h4 {
@@ -286,7 +274,7 @@ img {
 }
 
 .main {
-  overflow: hidden; /* For animation ScrollReveal */
+  overflow: hidden; 
 }
 
 /*=============== HOME ===============*/
@@ -322,7 +310,6 @@ img {
   right: -.75rem;
   border: 4px solid var(--black-color);
   z-index: 5;
-  transition: background-color .4s; /* for dark mode */
 }
 
 .home__arrow, 
@@ -330,7 +317,6 @@ img {
   position: absolute;
   filter: invert(1);
   width: 50px;
-  transition: filter .4s; /* for dark mode */
 }
 
 .home__arrow {
@@ -371,7 +357,7 @@ img {
 }
 
 .home__social-link:hover {
-  background-color: var(--black-color);
+  background-color: var(--first-color);
 }
 
 .home__info {
@@ -410,7 +396,6 @@ img {
   font-size: 1rem;
   cursor: pointer;
   overflow: hidden;
-  transition: background-color .4s; /* for dark mode */
 }
 
 .home__scroll-box i {
@@ -476,7 +461,6 @@ img {
 /*=============== ABOUT ===============*/
 .about {
   background-color: var(--container-color);
-  transition: background-color .4s; /* for dark mode */
 }
 
 .about__container {
@@ -512,7 +496,6 @@ img {
   top: -2.5rem;
   right: -3.5rem;
   border-bottom: 4px solid var(--first-color);
-  transition: background-color .4s; /* for dark mode */
 }
 
 .about__perfil .geometric-box {
@@ -525,7 +508,6 @@ img {
   right: -1.25rem;
   top: 6rem;
   width: 50px;
-  transition: filter .4s; /* for dark mode */
 }
 
 .about__box {
@@ -572,7 +554,6 @@ img {
 /*=============== PROJECTS ===============*/
 .projects {
   background-color: var(--container-color);
-  transition: background-color .4s; /* for dark mode */
 }
 
 .projects__container {
@@ -676,7 +657,6 @@ img {
   margin-left: auto;
   border-bottom: 4px solid var(--first-color);
   z-index: 5;
-  transition: background-color .4s; /* for dark mode */
 }
 
 .contact__data .section__title-2 {
@@ -705,7 +685,6 @@ img {
   background-color: var(--black-color);
   padding: 5rem 1.5rem 2.5rem;
   margin-top: -2.5rem;
-  transition: background-color .4s; /* for dark mode */
 }
 
 .contact__title {
@@ -861,7 +840,7 @@ img {
   bottom: -1.6rem;
   left: 0;
 }
-/*=============== BREAKPOINTS ===============*/
+
 /* For small devices */
 @media screen and (max-width: 340px) {
   .container {
